@@ -7,17 +7,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const appStyles = 'p-10 bg-sevGrey h-screen'
+  const appStyles = 'p-10 bg-sevGrey h-screen box-border'
   return (
     <Router>
       <div className={appStyles}>
         <NavBar />
-        <Routes>
-          <Route path='/' element={<HomePage />} exact />
-          <Route path='/about' element={<AboutPage />} exact />
-          <Route path='/articles-list' element={<ArticlesListPage />} exact />
-          <Route path='/article' element={<ArticlePage />} exact />
-        </Routes>
+        <div className='container max-w-4xl mx-auto'>
+          <Routes>
+            <Route path='/' element={<HomePage />} exact />
+            <Route path='/about' element={<AboutPage />} exact />
+            <Route path='/articles-list' element={<ArticlesListPage />} exact />
+            <Route path='/article' element={<ArticlePage />} exact />
+          </Routes>
+        </div>
       </div>
     </Router>
   )

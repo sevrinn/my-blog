@@ -1,18 +1,29 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
+  const navStyle = 'p-3 mb-10'
+  const navUlStyle = 'flex justify-end'
+  const navLiStyle =
+    'mr-3 p-3 border-2 border-sevBlue rounded-md text-sevBlue text-xl'
+  const activeStyle = 'bg-sevBlue text-sevGrey text-2xl'
   return (
-    <nav>
-      <ul>
+    <nav className={navStyle}>
+      <ul className={navUlStyle}>
         <li>
-          <Link to='/'>Home</Link>
+          <NavLink className={navLiStyle} activeStyle={activeStyle} to='/'>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to='/about'>About</Link>
+          <NavLink className={navLiStyle} to='/about'>
+            About
+          </NavLink>
         </li>
         <li>
-          <Link to='/articles-list'>Entries</Link>
+          <NavLink className={navLiStyle} to='/articles-list'>
+            Entries
+          </NavLink>
         </li>
       </ul>
     </nav>
