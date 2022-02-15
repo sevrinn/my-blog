@@ -6,6 +6,7 @@ module.exports = {
       sevBlue: '#348ba0',
       sevYellow: '#d9a64b',
       sevGrey: '#444444',
+      white: '#ffffff',
     },
     extend: {},
   },
