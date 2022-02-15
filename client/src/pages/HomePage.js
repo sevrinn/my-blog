@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HomePage = () => {
-  const h1 = 'text-5xl'
+  const h1 = 'text-3xl'
   const p = 'p-3'
   return (
     <>
