@@ -11,12 +11,11 @@ const ArticlesListPage = () => {
       <h1 className={h1}>ArticlesListPage</h1>
       <div className='mt-5'>
         {articleContent.map((article, key) => (
-          <Link
-            className={articleListItem}
-            key={key}
-            to={`/article/${article.name}`}
-          >
-            <h3>{article.title}</h3>
+          <Link key={key} to={`/article/${article.name}`}>
+            <h3 className={articleListItem}>{article.title}</h3>
+            <p className='text-sevBlue border-b border-black mb-4 p-2 text'>
+              {article.content[0].substring(0, 150)}...
+            </p>
           </Link>
         ))}
       </div>
