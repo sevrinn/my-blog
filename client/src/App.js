@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const appStyles = 'p-10 bg-sevGrey h-full box-border'
+  const appStyles = 'p-10 bg-sevGrey box-border'
   return (
     <Router>
       <div className={appStyles}>
