@@ -5,11 +5,13 @@ import articleContent from './article-content'
 
 const ArticlePage = () => {
   const h1 = 'text-3xl text-sevYellow capitalize'
-  const p = 'p-3 bg-sevPink rounded-md mt-20 w-3/4 mb-20'
+  const p = 'p-5 bg-sevPink rounded-md mt-20 w-3/4 mb-20'
 
   const { name } = useParams()
   const article = articleContent.find((article) => article.name === name)
 
+  //if page doesnt exist
+  if (!article) return <h1 className={h1}>Article doesnt exist</h1>
   return (
     <div className='bg-sevGrey w-screen'>
       <h1 className={h1}>{article.title}</h1>
