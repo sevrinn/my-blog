@@ -5,7 +5,7 @@ const NavBar = () => {
   const navStyle = 'p-3 mb-10'
   const navUlStyle = 'flex justify-end'
   const navLiStyle =
-    'transition duration-300 ease-in-out hover:scale-110 hover:bg-sevBlue hover:text-sevGrey mr-3 p-3 border-2 border-sevBlue rounded-md text-sevBlue text-xl'
+    'transition duration-300 ease-in-out hover:scale-110 duration-200 hover:bg-sevBlue hover:text-sevGrey mr-3 p-3 border-2 border-sevBlue rounded-md text-sevBlue text-xl'
 
   return (
     <nav className={navStyle}>
